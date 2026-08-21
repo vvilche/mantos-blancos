@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S/E Mantos Blancos — Unilineales</title>
+<style>
+  :root { --bg:#f8fafc; --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --accent:#2563eb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:Helvetica, Arial, sans-serif; padding:32px 20px; }
+  .wrap { max-width:1020px; margin:0 auto; }
+  h1 { font-size:22px; font-weight:700; }
+  .sub { color:var(--mut); font-size:13px; margin:6px 0 28px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:28px; box-shadow:0 1px 3px rgba(15,23,42,.06); }
+  .card h2 { font-size:15px; font-weight:700; margin-bottom:4px; }
+  .card .desc { color:var(--mut); font-size:12px; margin-bottom:16px; }
+  .card img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; background:#fff; display:block; }
+  .footer { color:var(--mut); font-size:11px; text-align:center; margin-top:8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>S/E Mantos Blancos — Diagramas Unilineales</h1>
+  <div class="sub">Capstone Copper · Región de Antofagasta · 220/23 kV · Generado 21-08-2026</div>
+
+  <div class="card">
+    <h2>1 · Subestación 220/23 kV</h2>
+    <div class="desc">Barra 220 kV (Laberinto 70 km · Chacaya 66 km) + T1 (34/42/50 MVA) y T2 (40 MVA) ABB TMY-44</div>
+    <img src="unilineal_limpio.svg" alt="Unilineal 220/23 kV">
+  </div>
+
+  <div class="card">
+    <h2>2 · Switchgear 23 kV</h2>
+    <div class="desc">Doble barra 23 kV · 2500 A · 1000 MVA · relés Schneider SEPAM</div>
+    <img src="unilineal_23kv.svg" alt="Switchgear 23 kV">
+  </div>
+
+  <div class="card">
+    <h2>3 · Media tensión 6.3 kV + Central Diésel</h2>
+    <div class="desc">10 grupos diésel 3850 kVA · molinos · switchgear ABB NALF / Brush</div>
+    <img src="unilineal_63kv.svg" alt="MT 6.3 kV + central diésel">
+  </div>
+
+  <div class="footer">Fuente: InfoTecnica CEN (API pública) · Planos leídos con visión (Kimi K3) · Todo "ilegible" quedó marcado, nada inventado</div>
+</div>
+</body>
+</html>
