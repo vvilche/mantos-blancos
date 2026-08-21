@@ -147,6 +147,39 @@ CROSS-SELL CONECTA↔SUPCON: el paquete completo = RTU/SCADA/PMU (NovaTech/Vizim
 subestación + DCS/PRIDE/instrumentación (SUPCON) en la planta. Un solo partner (CONECTA)
 vs 3 proveedores (Siemens PCS7+Siprotec, ABB 800xA+relés, Emerson DeltaV+Rosemount).
 
+═══════════════════════════════════════════════════
+11 · BRECHAS NORMATIVAS + CARTAS DEL COORDINADOR
+═══════════════════════════════════════════════════
+Fuente: InfoTécnica CEN (API pública, 21-08-2026) + cartas.coordinador.cl (PDF descargados).
+
+FLAGS CEN (S/E Mantos Blancos):
+  · flag_scada = FALSE      → sin SCADA certificado ante el CEN
+  · flag_equipocom = FALSE  → sin equipamiento de comunicaciones declarado
+  · flag_pararrayos = FALSE → sin pararrayos/descargadores declarados
+
+GRADO DE CUMPLIMIENTO (Mantos Copper S.A., 21-08-2026):
+  · Completitud: 97.8% (897/917 informados · 20 sin informar)
+  · Calidad: 54.7% (491/897 certificados = 311 validados + 180 en uso)
+  · RECHAZADOS: 152 · NO REVISADOS: 254  ← 406 datos con problemas
+
+CARTAS DEL COORDINADOR (3 encontradas, PDF descargados):
+  1. DE 03731-24 (23-07-2024) — RECHAZO de solicitud de desconexión/intervención
+     S/E Mantos Blancos (N°2024074892 y 2024074894). Motivo: no cumplió plazo/forma
+     (Art. 248 DS 327: aviso 120 h · Art. 249: suspensiones MT ≤8 h/12 meses). Afecta a CGE.
+  2. Dictamen N°27-2024 (06-12-2024) — Discrepancia de Mantos Copper ante Panel de
+     Expertos por el rechazo. La mantención era del Transformador de Poder T-1
+     (Informe Hitachi "Capstone Copper: Mantos Blancos Mantenimiento a T-1").
+  3. DE06407-25 (25-11-2025) — Plan de Trabajo Pruebas de Verificación SCADA + SITR +
+     enlaces de comunicación (Central Mantos Blancos). Entrega de informe antes del
+     31-12-2025 (plazo PRS vigente). Firmado por EnorChile S.A. (operador de la central).
+
+LECTURA COMERCIAL:
+  · SCADA en verificación activa (PRS) → ventana de modernización SCADA/RTU YA.
+  · flag_scada / equipocom / pararrayos = FALSE → 3 brechas declaradas que el CEN ve.
+  · 406 datos rechazados/no revisados → dolor de compliance InfoTécnica (EDAC/reporte).
+  · Contactos: David Pérez (Encargado Titular, Mantos Copper) · Aldo Araya (EnorChile,
+    Jefe de Planta Central Térmica). Operador de la central = EnorChile S.A.
+
 NOTA DE LECTURA: los planos son raster de 2019-2020 y varias placas salen "ilegible".
 Los modelos exactos de relés marcados SÍ se leyeron (REL670, REB670, MiCOM P643, GE D30,
 SEPAM, ION 8690). Todo lo "ilegible" queda explícito — no se inventó nada.

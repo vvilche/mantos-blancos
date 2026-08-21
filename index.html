@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>S/E Mantos Blancos — Análisis Técnico & Oportunidades</title>
 <style>
-  :root { --bg:#f8fafc; --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --accent:#2563eb; --scada:#0e7490; --supcon:#b45309; }
+  :root { --bg:#f8fafc; --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --accent:#2563eb; --scada:#0e7490; --supcon:#b45309; --warn:#b91c1c; }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:var(--bg); color:var(--ink); font-family:Helvetica, Arial, sans-serif; padding:36px 20px 60px; }
   .wrap { max-width:1020px; margin:0 auto; }
@@ -14,6 +14,7 @@
   h2.sec { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin:34px 0 14px; padding-bottom:8px; border-bottom:2px solid var(--line); }
   h2.sec.scada { color:var(--scada); border-color:#cde9f0; }
   h2.sec.supcon { color:var(--supcon); border-color:#f5e3c8; }
+  h2.sec.warn { color:var(--warn); border-color:#fbd5d5; }
   .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:22px; box-shadow:0 1px 3px rgba(15,23,42,.06); }
   .card h3 { font-size:15px; font-weight:700; margin-bottom:4px; }
   .card .desc { color:var(--mut); font-size:12px; margin-bottom:14px; }
@@ -32,6 +33,16 @@
   .tag.supcon { background:#fef3c7; color:#b45309; }
   .read { background:#fffbeb; border:1px solid #fde68a; border-radius:12px; padding:16px 18px; font-size:13px; line-height:1.6; }
   .read b { color:#92400e; }
+  table.eq { width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; border:1px solid var(--line); font-size:12.5px; }
+  table.eq caption { text-align:left; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--mut); padding:10px 12px 6px; background:#f1f5f9; }
+  table.eq th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--mut); padding:7px 12px; border-bottom:1px solid var(--line); }
+  table.eq td { padding:7px 12px; border-bottom:1px solid #f1f5f9; vertical-align:top; }
+  table.eq tr:last-child td { border-bottom:none; }
+  table.eq td.b { font-weight:700; white-space:nowrap; }
+  .flag { display:inline-block; font-weight:700; font-size:11px; padding:1px 8px; border-radius:6px; }
+  .flag.bad { background:#fee2e2; color:#b91c1c; }
+  .carta { background:#fff; border:1px solid var(--line); border-left:3px solid var(--warn); border-radius:8px; padding:12px 14px; margin-bottom:8px; font-size:12.5px; line-height:1.55; }
+  .carta .f { font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--mut); }
   .footer { color:var(--mut); font-size:11px; text-align:center; margin-top:30px; line-height:1.6; }
 </style>
 </head>
@@ -60,6 +71,36 @@
     <b>parcial</b> y calidad de datos CEN <b>débil</b> (54.7%). Señal clara de modernización + cumplimiento normativo.
   </div>
 
+  <!-- LISTADO DE EQUIPOS -->
+  <h2 class="sec">Listado de equipos instalados</h2>
+  <table class="eq">
+    <caption>Relés de protección (marca / modelo / función ANSI)</caption>
+    <tr><th>Ubicación</th><th>Equipo</th><th>Función</th></tr>
+    <tr><td class="b">220 kV — Líneas</td><td>ABB REL670 ×4 (2 líneas × S1/S2)</td><td>21, 79, 25, 50/51, 67N, 68, 50BF</td></tr>
+    <tr><td class="b">220 kV — Barras</td><td>ABB REB670 ×1</td><td>87B (diferencial de barras)</td></tr>
+    <tr><td class="b">220 kV — Trafo T1</td><td>Schneider MiCOM P643 (S1) · GE D30 (S2)</td><td>87T, 87N, 59N, 50BF · 21, 68, 59, 50/51</td></tr>
+    <tr><td class="b">220 kV — Medición</td><td>Schneider ION 8690</td><td>Facturación</td></tr>
+    <tr><td class="b">23 kV — Switchgear</td><td>Schneider SEPAM 20/25 · SEPAM 100S</td><td>50/51, 50G/51G, 67/67N, 50BF, 86, 27/59, 25</td></tr>
+  </table>
+  <table class="eq" style="margin-top:14px;">
+    <caption>Transformadores de poder</caption>
+    <tr><th>Equipo</th><th>Potencia</th><th>Tensión / detalle</th></tr>
+    <tr><td class="b">T1</td><td>34/42/50 MVA</td><td>220/23 kV · DYn11 · ABB TMY-44 · 1995</td></tr>
+    <tr><td class="b">T2</td><td>40 MVA</td><td>220/23 kV · ABB TMY-44 (alimenta barra 23 kV por 52E-4)</td></tr>
+    <tr><td class="b">4130-TL-0004 / 0005</td><td>37.5 MVA</td><td>23/6.3 kV · ONAN/ONAF (molinos) · NGR 200 A</td></tr>
+    <tr><td class="b">T3 / T4</td><td>13/16/20 MVA</td><td>24/6.6 kV · YnD1 (central diésel) · Rn 66.6 Ω</td></tr>
+    <tr><td class="b">Trafo N°5</td><td>1000 kVA</td><td>24/6.3 kV</td></tr>
+  </table>
+  <table class="eq" style="margin-top:14px;">
+    <caption>Interruptores / switchgear / generación</caption>
+    <tr><th>Equipo</th><th>Detalle</th></tr>
+    <tr><td class="b">220 kV</td><td>52J — Laberinto -04L · Chacaya -02L · T1/acoplamiento J1</td></tr>
+    <tr><td class="b">23 kV</td><td>Celdas SF6 extraíbles · incoming 2500 A/25 kA · alimentadores 1250 A/25 kA</td></tr>
+    <tr><td class="b">6.3 kV (legacy)</td><td>ABB NALF · Siemens 500 MVA · Brown Boveri 350 MVA · BRUSH</td></tr>
+    <tr><td class="b">Central diésel</td><td>10 grupos G-101..G-110 · 3850 kVA c/u (~38 MVA)</td></tr>
+    <tr><td class="b">SS/AA</td><td>CA 380/220 V (400 A) · CC 110 Vcc (cargadores 20 A, baterías 65 Ah) · 48 Vcc</td></tr>
+  </table>
+
   <!-- UNILINEALES -->
   <h2 class="sec">Diagramas unilineales</h2>
   <div class="card">
@@ -78,14 +119,37 @@
     <img src="unilineal_63kv.svg" alt="MT 6.3 kV + central diésel">
   </div>
 
+  <!-- BRECHAS NORMATIVAS -->
+  <h2 class="sec warn">Brechas normativas <span style="background:#fee2e2;color:#b91c1c;padding:2px 8px;border-radius:20px;font-size:10px;">Fuente: InfoTécnica CEN + cartas.coordinador.cl</span></h2>
+
+  <div class="grid" style="margin-bottom:14px;">
+    <div class="snap"><div class="k">Flag CEN · SCADA</div><div class="v"><span class="flag bad">FALSE</span> sin SCADA certificado</div></div>
+    <div class="snap"><div class="k">Flag CEN · Equipocom</div><div class="v"><span class="flag bad">FALSE</span> sin equipamiento de comunicaciones</div></div>
+    <div class="snap"><div class="k">Flag CEN · Pararrayos</div><div class="v"><span class="flag bad">FALSE</span> sin pararrayos declarados</div></div>
+    <div class="snap"><div class="k">Calidad InfoTécnica</div><div class="v">54.7% · 152 rechazados + 254 no revisados</div></div>
+    <div class="snap"><div class="k">Completitud</div><div class="v">97.8% · 20 datos sin informar</div></div>
+  </div>
+
+  <div class="carta"><div class="f">DE 03731-24 · 23-07-2024 · Rechazo de desconexión</div>
+  El Coordinador RECHAZÓ las solicitudes N°2024074892 y 2024074894 de desconexión/intervención de S/E Mantos Blancos por no cumplir <b>plazo y forma</b> (Art. 248 DS 327: aviso 120 h · Art. 249: suspensiones MT ≤8 h/12 meses). Afecta a cliente regulado CGE.</div>
+  <div class="carta"><div class="f">Dictamen N°27-2024 · 06-12-2024 · Discrepancia Panel de Expertos</div>
+  Mantos Copper discrepó del rechazo. La mantención era del <b>Transformador de Poder T-1</b> (Informe Hitachi "Capstone Copper: Mantos Blancos Mantenimiento a T-1"). Evidencia de fricción normativa en la operación del trafo principal.</div>
+  <div class="carta"><div class="f">DE06407-25 · 25-11-2025 · Plan de verificación SCADA + SITR + comunicaciones</div>
+  Plan de trabajo de <b>pruebas de verificación SCADA, SITR y enlaces de comunicación</b> de Central Mantos Blancos (plazo PRS, informe antes del 31-12-2025). Firmado por EnorChile S.A. — <b>SCADA en verificación activa YA</b>.</div>
+
+  <div class="read">
+    <b>Contactos clave:</b> David Pérez (Encargado Titular, Mantos Copper) · Aldo Araya (Jefe de Planta Central Térmica, EnorChile S.A.).
+    Operador de la central = <b>EnorChile S.A.</b> — no solo Capstone.
+  </div>
+
   <!-- OPORTUNIDADES CONECTA -->
   <h2 class="sec scada">Oportunidades CONECTA — SCADA · RTU · PMU · Red <span class="tag scada">NovaTech · Vizimax · Belden</span></h2>
   <ul class="opp scada">
-    <li><b>SCADA + RTU nuevo</b> — flag_scada=FALSE. Orion SCADA + RTU OrionLX+ (reemplaza el "RTU Mantos Blancos" existente).</li>
+    <li><b>SCADA + RTU nuevo</b> — flag_scada=FALSE y verificación SCADA en curso (PRS). Orion SCADA + RTU OrionLX+ (reemplaza el "RTU Mantos Blancos" existente).</li>
     <li><b>Modernización de relés → IEC 61850</b> — migrar el parque mixto (REL670/P643/D30/SEPAM) a bus de proceso GOOSE/MMS + conmutadores Hirschmann IEC 61850-3.</li>
     <li><b>PMU + sincronización</b> — Vizimax PMU + Kronos para cumplimiento CEN (medición fasorial en barra 220 kV).</li>
-    <li><b>Medición / facturación</b> — Bitronics (NovaTech) en reemplazo del ION 8690 + calidad de datos (EDAC, reporte automático).</li>
-    <li><b>Monitoreo de trafos</b> — Vizimax RightWON / AMU (merging unit) para los ABB TMY-44 de 1995.</li>
+    <li><b>Medición / facturación</b> — Bitronics (NovaTech) en reemplazo del ION 8690 + EDAC y reporte automático (406 datos rechazados/no revisados).</li>
+    <li><b>Monitoreo de trafos</b> — Vizimax RightWON / AMU para los ABB TMY-44 de 1995 (mantención T-1 ya en fricción normativa).</li>
   </ul>
 
   <!-- OPORTUNIDADES SUPCON -->
@@ -104,7 +168,7 @@
     Emerson DeltaV+Rosemount).
   </div>
 
-  <div class="footer">Fuente: InfoTecnica CEN (API pública) · Planos leídos con visión (Kimi K3) · Todo "ilegible" quedó marcado, nada inventado</div>
+  <div class="footer">Fuente: InfoTécnica CEN (API pública) · Planos leídos con visión (Kimi K3) · Cartas del Coordinador (cartas.coordinador.cl, PDF) · Todo "ilegible" quedó marcado, nada inventado</div>
 </div>
 </body>
 </html>
