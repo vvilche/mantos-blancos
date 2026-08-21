@@ -1,0 +1,66 @@
+Extracción conservadora del plano. La resolución del raster no permite leer con fiabilidad la mayoría de placas de relés, TC/TP y datos finos; marco como **ilegible** todo lo que no sea inequívoco.
+
+## 0) Identificación del plano
+- Proyecto: **MANTOS BLANCOS DEBOTTLENECKING PROJECT – EPC CONTRACT**
+- Título: **DIAGRAMA UNILINEAL GENERAL – MEDIA Y BAJA TENSIÓN**; en rótulo inferior también: **DIAGRAMA UNILINEAL GENERAL – SISTEMA DE ALTA Y MEDIA TENSIÓN**
+- Cliente: **MANTOS COPPER / MANTOS BLANCOS**
+- Nº OHL: **E-0020-0000-ELE-SLD-001**
+- Nº cliente: **MBDP05-0000-ELE-SLD-001**
+- Drawing No. visible en tabla de revisiones: **MBDP01-0000-ELE-SLD-001**
+- Revisión actual destacada: **0 – EMITIDO PARA CONSTRUCCIÓN – 06-MAR-2020**
+- Revisiones previas visibles: **A 09-JUL-2019**, **B 25-JUL-2019**, **C 26-DIC-2019**
+- Escala: **S/E**; estado de aprobación: ilegible/“AS NOTED”.
+- Notas del rótulo: líneas tenues = existente; líneas oscuras = proyectado; valores de protecciones son estimativos y se confirman con estudios.
+
+## 1) Niveles de tensión y barras legibles
+- **220 kV – 50 Hz**: entradas desde **S/E LABERINTO, línea 220 kV, 70 km** y **S/E CHACAYA, línea 220 kV, 66 km aprox.** Texto: **“MARCO BARRA 220 kV – 50 Hz”** y **“BARRA 220 kV – 300 A – 50 Hz”**.
+- **23 kV**: **“BARRA 23 kV – 2500 A – 50 Hz – 1000 MVA”**.
+- **24 kV**: referencias a **SWITCHGEAR 24 kV SS/EE PRINCIPAL**, alimentaciones **MVS-200-1 / MVS-200-2** desde SS/EE principal.
+- **7.2 kV**: **SWITCHGEAR 7.2 kV** en SS/EE principal; interruptores con referencia **7.2 kV 630 A SF-6** parcialmente legibles.
+- **6.3 kV**: múltiples barras/switchgear: **MVS-900-1 6.3 kV**, **MVS-600-1/3 6.3 kV**, **MVS-600-1/4 6.3 kV**, **MVS-700-0 6.3 kV**, **MVS-700-4 6.3 kV**, **MVS-500-1 6.3 kV**, barras A.T. N1/N2/N3 **6.3 kV** en casa de fuerza.
+- **6.6 kV**: aparece en switchgear de concentrador: texto aproximado **3x6.6 kV – 50 Hz**; dato asociado **SWGR BRUSH 350 MVA / 33 kA SIM** parcialmente legible.
+- **0.4 kV / 400-230 V / 0.38 kV**: MCC y salas eléctricas con textos **400/230 V**, **0.4 kV**, **0.38 kV**, **2500 A/2000 A/1200 A 0.4 kV 50 Hz 65 kA** parcialmente legibles.
+- Centro de control de motores existente: **6000 – 380 V** parcialmente legible.
+
+## 2) Relés de protección / códigos ANSI
+- Código claramente repetido en todo el diagrama: **52** en interruptores de potencia media/alta tensión.
+- Otros códigos ANSI esperables **50/51/87/21/59/27/81/63/86**: **ilegibles** en la imagen; no se distinguen números ANSI junto a relés de forma confiable.
+- Marca/modelo exacto de relés **SEL, ABB, Siemens, GE/Multilin, Schneider MiCOM, etc.**: **ilegible**. No se alcanzan a leer placas de IED ni modelos.
+- Funciones de automatización, bay control units, trip/close supervision, sincronismo, diferencial, distancia, sobrefrecuencia/subfrecuencia, Buchholz/63, bloqueo 86: **ilegible/no identificable**.
+
+## 3) Transformadores de poder legibles/parciales
+- Zona superior derecha, alimentación molino línea 2:
+  - **4130-TL-0004** y **4130-TL-0005**: texto parcial **37.5 MVA**, **ONAN/ONAF1/ONAF2**, relación aparente **23/6.3 kV**. Grupo vectorial: **ilegible**. NGR asociado **4130-TL-0004-NGR / 4130-TL-0005-NGR**, **200 A 10 s** parcialmente legible.
+- Transformador cerca de interconexión 24 kV:
+  - **TRANSFORMADOR No. 5**: parcial **1000 kVA**, relación aparente **24/6.3 kV**; grupo/impedancia: **ilegible**.
+- Transformadores No.1/No.2 desde barra 220 kV hacia sistema 23/24 kV: textos **TRANSFORMADOR No.1 / No.2**, potencia y relación exactas: **ilegibles**; se ven resistencias de puesta a tierra y notas **Rn = 65.6 ohm / Rn = 18.2 ohm** parciales, sin confirmar asociación exacta.
+- Transformadores de distribución/alumbrado en simbología: conexión **delta-estrella** indicada solo en leyenda; unidades específicas: **ilegible**.
+- Varios transformadores de servicios auxiliares/MCC 6.3/0.4 kV o 23/0.4 kV: existen símbolos y potencias tipo **1500 kVA**, **3 MVA**, **0.5 MVA**, **7.5 MVA** en zonas derechas, pero la lectura exacta de cada placa no es confiable: marcar como **parcial/ilegible**.
+
+## 4) Interruptores legibles
+- Símbolo dominante: interruptor de potencia media/alta tensión con código **52**; en simbología: **interruptor de potencia media y alta tensión** e **interruptor de potencia media y alta tensión extraíble**.
+- Datos repetidos parcialmente legibles en celdas 23/24 kV: **24 kV – 1250 A – SF-6**, **23 kV – 1250 A SF-6**, **7.2 kV – 630 A SF-6**, **630 A**, **1250 A**, **2500 A**.
+- En barras/celdas 6.3 kV y MCC: corrientes visibles sueltas **1200 A**, **1250 A**, **1600 A**, **2000 A**, **2500 A**, **4000 A** en algunos CDC/MCC; asignación exacta por interruptor: **ilegible**.
+- Marca/modelo de interruptores: **ilegible**. Solo se leen tipos de switchgear por aplicación: **ABB tipo NALF 6000 V** en switchgear relave/PS-3A/garajé/emergencia; **SWGR SIEMENS 500 MVA 33 kA SIM 3x6.3 kV 50 Hz** parcial en chancado primario Santa Bárbara; **SWGR B. BOVERI 350 MVA 31.5 kA SIM 3x6.3 kV 50 Hz** parcial en switchgear 700-0. Modelo exacto de interruptor: **ilegible**.
+
+## 5) TC/TP
+- Se observan símbolos de TC junto a interruptores y textos de relación tipo **100/5**, **150/5**, **3x(1x500/1A)**, **2x(1x300/1A)**, **600/5A PD-07**, **3x(1x2/0.5A)** de forma dispersa; asociación exacta núcleo/clase/burden por TC: **ilegible**.
+- TP/VT: aparecen símbolos y relaciones parciales en 23/24 kV y 6.3 kV, pero relación exacta y clase de precisión: **ilegible**.
+- Clases de precisión medición/protección **0.2/0.5/5P/10P/TPY etc.**: **ilegible**.
+
+## 6) Comunicaciones
+- **IEC 61850, GOOSE, MMS, PRP/HSR, IEC 60870-5-104, DNP3, Modbus, sync PTP/IRIG-B**: **no legible / no aparece de forma inequívoca**.
+- Arquitectura de red, switches Ethernet, puertos, VLAN, IEDs, SCADA: **ilegible**.
+
+## 7) Seccionadores, pararrayos, condensadores, reactores, NGR
+- Simbología define: **desconectador fusible**, **seccionador con puesta a tierra**, **seccionador**, **desconectador fusible con puesta a tierra**, **resistencia puesta a tierra**, **transformador potencia distribución/alumbrado delta-estrella**, **transformador potencia y distribución por vendor molino estrella-estrella / delta-estrella**.
+- NGR legibles/parciales: **4130-TL-0004-NGR**, **4130-TL-0005-NGR**, **200 A 10 s**; valores óhmicos exactos: **ilegible**.
+- Banco de condensadores existente: texto **“BANCO COND. EXIST.”** en zona derecha; potencia kVAr/tensión exacta: **ilegible**.
+- Pararrayos: símbolos presentes en entradas/barras; características kV/MCOV/clase: **ilegible**.
+- Reactores: no identificados claramente; si existen símbolos serie, datos: **ilegible**.
+- Resistencias de puesta a tierra con notas **Rn = 65.6 Ω** y **Rn = 18.2 Ω** aparecen parcialmente en transformadores de 220/23 kV; asociación exacta: **parcial/ilegible**.
+
+## 8) Observaciones de ingeniería
+- El plano distingue existente/proyectado por grosor de línea; hay múltiples salas eléctricas referenciadas: **4130-ER-0002**, **4100-SG-0001-02**, **4210-ER-0001**, **4250-MCC-0001**, **4320-ER-0001**, **2000-ER-0001**, entre otras; muchas referencias cruzadas **E-0020-XXXX-ELE-SLD-XXX** son legibles solo parcialmente.
+- No es posible extraer de forma fiable ajustes de protección, curvas, selectividad, esquemas de disparo, interbloqueos ni lógica de transferencia desde esta imagen.
+- Recomendación: para tabulación de protecciones se requiere PDF vectorial o planos derivados por switchgear/MCC y estudios de cortocircuito/coordinación; en este raster cualquier modelo exacto de relé sería invención.

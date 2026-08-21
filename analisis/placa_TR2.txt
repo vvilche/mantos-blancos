@@ -1,0 +1,24 @@
+La imagen **no muestra la placa del transformador**, sino la **portada de un informe ABB** de ensayos. Datos técnicos visibles:
+
+| Dato solicitado | Valor visible | Observación |
+|---|---:|---|
+| Fabricante | **ABB / ASEA BROWN BOVERI** | Logo y membrete; informe “de/from BRABB-TD/PPP7” |
+| N.º de serie | **59421** | En “Objeto de ensayo”: “no. 59421” |
+| Tipo/modelo | **TMY-44** | “Transformador monofásico, tipo TMY-44” |
+| Potencia | **“34,42,50MVA”** | Transcripción exacta; formato ambiguo. No se distingue si son 34/42/50 MVA por refrigeración ni valores separados |
+| Relación de tensión | **220/23 kV** | Texto: “220/23KV” |
+| Fases | **Monofásico** | Visible en objeto de ensayo |
+| Impedancia (%) | **No visible / ilegible** | No aparece en la portada |
+| Grupo de conexión | **No visible / ilegible** | No aparece Dyn/Ynd/etc. |
+| Corriente nominal primaria | **No visible / ilegible** | No aparece |
+| Corriente nominal secundaria | **No visible / ilegible** | No aparece |
+| Año de fabricación | **No visible** | Solo aparece fecha del informe: **03/07/1995**; no necesariamente fabricación |
+| Normas citadas | **ANSI/IEEE C57.12.00-1993; ANSI/IEEE C57.12.90-1993; IEC76-1976** | Normas utilizadas en ensayos, no confirmadas como placa |
+| Cliente | **MANTOS BLANCOS** | — |
+| Referencia | **ABB OI: 414.11.035-00** | — |
+| Informe | **R-TD/PPP7: 95/113** | Reg.dec. **450**; **102** páginas |
+| Título/asunto | **Ensaios finais em transformador** | Marcado: ensayo/investigación experimental y relatório final |
+| Ensayos listados | **Rutina; Calentamiento; Impulso atmosférico y maniobra; Ruido audible; Medición de descargas parciales** | Texto mezcla portugués/español |
+| Autor / aprobado | **Ing. Francisco Bloise / Eng. Sidney Martins** | Firma ilegible |
+
+No invento valores derivados; impedancia, corrientes y grupo vectorial **no son legibles** en esta imagen.

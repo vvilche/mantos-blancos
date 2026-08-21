@@ -1,0 +1,16 @@
+{
+  "title": "S/E MANTOS BLANCOS · MT 6.3 kV + CENTRAL DIÉSEL",
+  "subtitle": "10 grupos diésel 3850 kVA · molinos · switchgear ABB NALF / Brush",
+  "width": 960,
+  "height": 520,
+  "buses": [
+    { "id": "63", "y": 320, "label": "6.3 kV", "color": "#d97706" }
+  ],
+  "branches": [
+    { "type": "generator", "x": 200, "bus": "63", "label": "G-101..105", "spec": "5× 3850 kVA" },
+    { "type": "generator", "x": 550, "bus": "63", "label": "G-106..110", "spec": "5× 3850 kVA" },
+    { "type": "feeder", "x": 350, "bus": "63", "label": "MOLINO 7", "spec": "chancado primario" },
+    { "type": "feeder", "x": 700, "bus": "63", "label": "RELAVE", "spec": "ABB NALF" },
+    { "type": "feeder", "x": 850, "bus": "63", "label": "CHANCADO", "spec": "Siemens 500 MVA" }
+  ]
+}

@@ -1,0 +1,109 @@
+A continuación presento la extracción **solo con lo legible** en el plano. Donde la resolución no permite asegurar marca/modelo/relación, indico **“ilegible”**. No he inferido datos.
+
+## Identificación del plano
+- Empresa: **EMPRESA MINERA DE MANTOS BLANCOS**
+- División: **MANTOS BLANCOS**
+- Contenido: **SERVICIOS GENERALES – DIAGRAMA UNILINEAL SIMPLIFICADO – SISTEMA DE ALTA TENSIÓN**
+- Plano N°: **96-70351**
+- Formato: **A1**
+- Revisión actual visible: **REV. 9**
+- Escala: **S/ESCALA**
+- Historial de revisiones legible: K 29/07/99 “Emitido para aprobación”; 2 MAY.04; 3 AGO.07; 4 ABRIL.08; 5 JUNIO.10; 6 JULIO.10; 7 JUNIO.11; 8 SEPT.11; 9 ENE.2013, varias con nota “ACTUALIZACIÓN (W.Y.B.)” / “(R.V.C.)” / “(P.R.R.)”.
+- Revisó/Aprobó: **P. Rodríguez / R. Valdebenito**, fechas **06.10.08**; APR. J.Elec.: **M. González 08.10.08**. Campos DTP/GRTE: ilegibles o en blanco.
+
+## Nomenclatura del propio plano
+- **MVS**: Medium Voltage Switchgear  
+- **SS/AA**: Servicios Auxiliares  
+- **OCB**: Disyuntor en aceite  
+- **SF-6**: Disyuntor de hexafloruro de azufre  
+- **ACB**: Disyuntor al vacío  
+- **SWGR**: Switchgear
+
+---
+
+# 1) Niveles de tensión y barras
+| Barra / sistema | Tensión | Corriente / frecuencia / cortocircuito legible | Observaciones |
+|---|---:|---|---|
+| Línea desde S/E Laberinto | **220 kV** | 50 Hz | Entrada superior “DE S/E LABERINTO – LÍNEA 220 KV” |
+| Línea desde S/E Chacaya | **220 kV** | 50 Hz; **66 km aprox.** | “DE S/E CHACAYA – LÍNEA 220 KV – 66 KM APROX.” |
+| Marco barra | **220 kV – 50 Hz** | ilegible | “MARCO BARRA 220 KV–50 HZ” |
+| Barra 220 kV | **220 kV – 300 A – 50 Hz** | 300 A | “BARRA 220 KV–300A–50 HZ” |
+| Barra principal MT | **23 kV – 2500 A – 50 Hz – 1000 MVA** | 2500 A; 1000 MVA | “BARRA 23KV – 2500A–50HZ–1000 MVA”; secciones **MVS-200-1 / MVS-200-2** |
+| Switchgear SS/EE Principal | **24 kV** | ilegible | “SWITCHGEAR 24 KV SS/EE PRINCIPAL” |
+| MVS-400 | **23 kV – 3Ø – 50 Hz – 1250 A – 1000 MVA** | 1250 A; 1000 MVA | Texto junto a barra MVS-400 |
+| Switchgear SX/EW | **6,3 kV** | **25 kA sim.** | “SWITCHGEAR SX/EW 25 KA SIM.” |
+| MVS-300 | **7,2 kV** | 630 A; SF-6 | “SWITCHGEAR 7.2 KV … MVS-300”; celdas “INT. 7.2 KV 630 A SF-6” |
+| MVS-300-1 / MVS-300-2 | **6000 V** | ABB tipo NALF | Bomba Latorre / Emergencia SX-EW |
+| MVS-600-1/3, MVS-600-1/4 | **6,3 kV** | ABB tipo NALF 6000 V | Relave / PS-3A |
+| MVS-600-1/2 y MVS-600-1/1 Concentrador | **3×6,3 kV – 50 Hz** | **SWGR BRUSH 334 MVA – 30,6 kA sim.** | “SWITCHGEAR CONCENTRADOR” |
+| MVS-700-0 Barras A.T. N°0 | **6,3 kV** | **SWGR B. Boveri 350 MVA – 31,6 kA sim. – 3×6,3 kV – 50 Hz** | “SWITCHGEAR 700-0” |
+| MVS-700-1 / MVS-700-2 / MVS-700-3 | **6,3 kV** | Barras A.T. N°1/N°2/N°3 | Alimentadores A-1…A-22, etc. |
+| MVS-700-4 Garaje | **6,3 kV** | ABB tipo NALF 6000 V | “SWITCHGEAR GARAJE” |
+| MVS-800-1 | tensión de barra no clara; asociado a **6,3 kV** por contexto | ilegible | “SWITCHGEAR CHANCADORES SECUNDARIO SULFURO” |
+| MVS-900-1 Ux. Secundaria | **6,3 kV** | Incoming SF-6 | “SWITCHGEAR (UX. SECUNDARIA) MVS-900-1 6,3KV” |
+| MVS-500-1 / MVS-500-2 Chancado Primario Santa Bárbara | **3×6,3 kV – 50 Hz** | **SWGR SIEMENS 500 MVA – 33 kA sim.** | “SWITCHGEAR CHANCADO PRIMARIO SANTA BARBARA” |
+| Central Diésel Emablos | **3×6,6 kV – 50 Hz** | **SWGR BRUSH 350 MVA equiv. – 30,6 kA sim.** | Generación/emergencia |
+| Switchgear MVS-600-2 / MVS-600-3 Molino 7 | **6,3 kV** | SF-6 | Parte superior derecha |
+| Servicios auxiliares / trafos pequeños | **6000/400 V**, **24/0,4 kV** | — | Varios SS/AA |
+
+# 2) Relés de protección
+No se distinguen **cajas de relé con marca/modelo** (SEL, ABB, Siemens, GE, Schneider, etc.). En el plano aparecen principalmente **códigos funcionales asociados a TC/interruptores**, no placas de IED.
+
+Códigos ANSI legibles:
+- **50/51**: aparece en varias posiciones de 23 kV junto a TC, p.ej. “400/5 50/51”, “50/51 6”, “400/1 50/51 6” en MVS-200-1/MVS-200-2. Asignación exacta de cada 50/51 a alimentador específico: parcialmente ilegible.
+- **52**: identificador de interruptor usado de forma extensa en todo el diagrama.
+- Otros códigos (**87, 21, 59, 27, 81, 63, 86, 49, 46, 32, 40, 50G/51G, 50N/51N, 79, 25**): **no legibles / no aparecen claramente**.
+
+Marca/modelo exacto de relés/IED: **ilegible — no se alcanza a identificar ningún modelo** (no se leen SEL-xxx, REF/REB/REC, 7SJ/7UT/7SA/7SL, Multilin, MiCOM, etc.).
+
+# 3) Transformadores de potencia
+| ID | Potencia | Relación | Grupo conexión | Notas |
+|---|---:|---:|---|---|
+| Transformador N°1 | **34/42/50 MVA** | **220 ±(10×1%) / 24 kV** | **Dyn 1 PS** | “ONAN/…” parcialmente ilegible; cambiador de taps bajo carga; “CONEXIÓN: Dyn 1 PS” |
+| Transformador N°2 | **40 MVA** | lado 220/23 kV exacto: **ilegible** | ilegible | Alimenta barra 23 kV por 52E-4 |
+| Transformador N°5 | **1600 kVA** | **24/6,3 kV** | ilegible | Alimenta MVS-300 |
+| Transformador N°6 | **1000 kVA** | **24/6,3 kV** | **Dyn** legible; subíndice ilegible | MVS-300 |
+| Transformador N°7 | **100 kVA** | **24/0,4 kV** | **Dyn** | Servicios/panel SS/AA C.A. |
+| Trafo No.3 | **13/16/20 MVA** | relación kV: ilegible | ilegible | Sector MVS-700 / Central Diésel |
+| Trafo No.4 | **13/16/20 MVA** | relación kV: ilegible | ilegible | Sector MVS-700 / Central Diésel |
+| S/E 500 kVA rectificadores auxiliares EW | **500 kVA** | **6000/400 V** | ilegible | “S/E 500 KVA 6000/400 V RECTIFICADORES AUXILIARES EW” |
+| Trafo 1600 kVA SS/AA | **1600 kVA** | **6000/400 V** | ilegible | Junto a MVS-300-1 |
+| Trafos Dump Leach Este | **3,75 MVA** cada uno aprox. | **24/0,4 kV** | ilegible | Dos unidades “24/0,4 KV 3.75 MVA” |
+| Otros trafos de distribución 6,3/0,4 kV y 24/0,4 kV | potencias diversas | parcialmente ilegibles | ilegibles | Numerosos rótulos pequeños no alcanzan a leerse con certeza |
+
+# 4) Interruptores
+Tipos legibles por nomenclatura y rótulos:
+- **SF-6**: interruptores de hexafloruro; muy frecuentes en 23 kV, 7,2 kV y 6,3 kV. Rótulos: “INT. 25 KV … SF-6”, “INT. 7.2 KV 630 A SF-6”, “INCOMING SF-6”.
+- **OCB**: disyuntor en aceite; múltiples celdas marcadas “400 A OCB”, “800 A OCB”, “1200 A OCB”, “2000 A OCB” en MVS-600/MVS-700.
+- **ACB**: disyuntor al vacío; rótulos “1600 A ACB”, “630 A ACB”, “1200 A ACB” en MVS-500/MVS-700/MVS-900.
+
+Valores legibles representativos:
+- 23/24 kV: “INT. 25 KV 1250 A SF-6”, “INT. 25 KV 2000 A SF-6” (asociados a MVS-200-1/2); corrientes exactas por celda: algunas ilegibles.
+- 7,2 kV MVS-300: **630 A SF-6**.
+- 6,3 kV: **400 A / 630 A / 800 A / 1200 A / 1600 A / 2000 A**, tipo **OCB/ACB/SF-6** según celda.
+- Marcas de interruptor propiamente tal: **ilegible**; solo se leen marcas de switchgear (ABB NALF, Brush, B. Boveri, Siemens) a nivel de tablero, no modelo de interruptor.
+
+# 5) Transformadores de medida TC/TP
+Legibles:
+- TCs en barra 23 kV MVS-200: **100/5**, **400/5**, **400/1**, **600/5**, **1250/5**, **1500/5**, **2500/5**; varios con texto “50/51”.
+- TP/VT en SS/EE Principal: **23/0,115/0,115 kV** y **0,115/0,115/23 kV** (según sentido de rotulación); fusible **25 kV – 0,315 A** visible.
+- Entrada 220 kV: relación de TC/TP exacta: **ilegible**.
+- Clases de precisión (0,2/0,5/5P/10P, PX, clase de TP): **ilegibles** en todo el plano.
+- Burden VA de TC/TP: **ilegible**.
+
+# 6) Comunicaciones
+- **IEC 61850 / GOOSE / MMS / DNP3 / Modbus / PRP/HSR**: **no aparecen / ilegible**. El plano es unilineal simplificado y no muestra red de comunicaciones, switches, IEDs ni arquitectura SA.
+
+# 7) Seccionadores, pararrayos, condensadores, reactores
+- **Seccionadores**: símbolos de cuchillas/seccionadores presentes en múltiples entradas y barras; referencias tipo **89J/89U** parcialmente visibles en 220 kV (p.ej. 89J-04T/04L/04A, 89J-02T/02L/02A). Corriente/tensión exacta de cada seccionador: **ilegible**.
+- **Pararrayos**: símbolos de descargador/pararrayos visibles en varias celdas y entradas; datos (Ur, corriente nominal, clase): **ilegible**.
+- **Resistencias de puesta a tierra / reactores**: rótulos legibles **“Rn = 66,6 OHM”** y **“Rn = 18,2 OHM”** en puntos de neutro/sector 24 kV; naturaleza exacta (resistencia de neutro) se sugiere por “Rn”, pero conexión detallada: parcialmente ilegible.
+- **Bancos de condensadores**: **no se identifican claramente**.
+- **Reactores serie/shunt**: **no se identifican claramente**; solo Rn arriba.
+
+# 8) Elementos de generación/emergencia e interconexiones legibles
+- **Central Diésel Emablos**: SWGR Brush **350 MVA equiv., 30,6 kA sim., 3×6,6 kV, 50 Hz**.
+- Interconexiones legibles: “INTERCONEXIÓN SWGR 24 kV EN PLANTA SXEW”; “INTERCONEXIÓN SWGR 24kV/SWGR SX/EW”; “INTERCONEXIÓN MVS-700-2/MVS-700-0”; “MVS-700-2/MVS-700-3”; “MVS-700-3/MVS-700-2”; “MVS-700-1/MVS-500-1”; “MVS-500-1/MVS-700-1”; “MVS-600-1/2/MVS-700-2”; “MVS-600-1/1/MVS-700-1”. Longitudes exactas de algunas interconexiones: parcialmente legibles (“2500 mts”, “L=750 m”, “L=250 m”) pero no todas asegurables.
+
+## Limitación importante
+La imagen tiene baja resolución relativa para el tamaño A1; por tanto **marca/modelo de relés, clases de precisión de TC/TP, datos de pararrayos, relaciones exactas de varios trafos menores y protocolos** deben considerarse **ilegibles** salvo confirmación con el PDF/DWG original a mayor zoom.

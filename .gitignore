@@ -1,0 +1,19 @@
+# Documentos crudos de InfoTecnica CEN (re-descargables con download.py)
+docs/
+auditoria/
+png/
+png_auditoria/
+
+# Imágenes generadas y archivos de prueba/intermedios
+*.png
+*.jpg
+*.rar
+*.dwg
+*.DWG
+unilineal_schemdraw.svg
+unilineal_220_23kV.svg
+test_generador.svg
+draw_schemdraw.py
+
+# macOS
+.DS_Store

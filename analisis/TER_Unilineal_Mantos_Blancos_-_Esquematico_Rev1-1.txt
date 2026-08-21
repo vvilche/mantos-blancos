@@ -1,0 +1,137 @@
+A continuación extraigo únicamente lo legible del plano. Donde el diagrama no muestra dato o no se alcanza a leer, lo marco como **ilegible / no indicado**.
+
+## 1) Niveles de tensión y barras
+
+- **Barra 220 kV**: aparece dos veces como “BARRA 220 kV” (doble barra/arreglo en la parte superior).
+- Alimentaciones entrantes a 220 kV:
+  - **DE SE LABERINTO**
+  - **DE SE CHACAYA**
+- **Barra 23 kV – 2500 A**.
+- Nivel medio/bajo de distribución generación: **6,6 kV** (derivado de transformadores 24/6,6 kV y TT/PP 6300/120 V).
+- Barras de generación/auxiliares:
+  - **MVS-700-1 — Barras A.T. N°1**
+  - **MVS-700-2 — Barras A.T. N°2**
+  - **MVS-700-3**
+  - **Interconexión MVS-700-3 / MVS-700-2**
+  - **Alternativa Interconexión Barra N°1 – N°2**
+- Barras/celdas 23 kV:
+  - **MVS-200-1**
+  - **MVS-200-2**
+- Tensión de transformador principal: **220 ±(10×1%) / 24 kV**.
+- Tensión secundaria de T3/T4: **24 / 6,6 kV**.
+
+## 2) Relés de protección
+
+**Marca y modelo exacto: no indicados / ilegibles en el plano.** No se aprecian designaciones SEL, ABB, Siemens, GE/Multilin, Schneider MiCOM, etc.
+
+Códigos/funciones ANSI legibles o asociadas a equipos:
+
+- **50/51**: aparece explícitamente junto a TC “600/5 — 400/1 — 50/51” en celda INT 25 kV 1250 A SF-6.
+- **52**: interruptor de potencia / breaker, usado en múltiples celdas.
+- **52E**: interruptores/celdas etiquetados 52E-3, 52E-4, 52E-5, 52E-7.
+- **52J**: interruptores asociados a líneas 220 kV: 52J-04L, 52J-02L.
+- **89 / 89J**: seccionadores, por ejemplo 89J-04T, 89J-04L, 89J-04A, 89J-02T, 89J-02L, 89J-02A, 89J1-1.
+- No se distinguen claramente funciones **87, 21, 59, 27, 81, 63, 86** como relé específico; si existen, están **ilegibles/no rotuladas** en el unilineal.
+
+## 3) Transformadores de poder
+
+- **TRANSFORMADOR N°1**
+  - Potencia: **34/42/50 MVA**
+  - Refrigeración: **OA/FA/FA**
+  - Relación: **220 ±(10×1%) / 24 kV**
+  - Cambiador: **de taps bajo carga**
+  - Conexión: **DYn1 PS**
+  - Resistencia de neutro: **Rn = 66,6 Ω**
+
+- **TRANSFORMADOR N°3**
+  - Potencia: **13/16/20 MVA**
+  - Relación: **24/6,6 kV**
+  - Conexión: **YnD1**
+  - Resistencia de neutro: **Rn = 66,6 Ω**
+
+- **TRANSFORMADOR N°4**
+  - Potencia: **13/16/20 MVA**
+  - Relación: **24/6,6 kV**
+  - Conexión: **YnD1**
+  - Resistencia de neutro: **Rn = 66,6 Ω**
+
+- Transformadores de servicios auxiliares / cargas:
+  - **SS/AA T-1: 1000 kVA**
+  - **SS/AA T-2: 1000 kVA**
+  - **SS/AA T-3: 1500 kVA**
+  - **SS/AA T-4: 1500 kVA**
+  - Relación exacta de SS/AA: **ilegible/no indicada**.
+
+- Generadores/motores representados con carga kVA:
+  - **G-101, G-102, G-103, G-104: 3850 kVA** c/u
+  - **G-105: 3850 kVA**
+  - **G-106, G-107, G-108, G-109, G-110: 3850 kVA** c/u
+
+## 4) Interruptores
+
+No se lee marca ni modelo comercial. Datos eléctricos legibles:
+
+- **INT 25 kV — 2500 A — SF-6**, CT asociado **1500/5**, celda 52E-4.
+- **INT 25 kV — 2500 A — SF-6**, celda 52E-5.
+- **INT 25 kV — 1250 A — SF-6**, CT **600/5 — 400/1 — 50/51**, celda 52E-3.
+- **INT 25 kV — 1250 A — SF-6**, celda 52E-7.
+- Interruptor/celda **52E D-6 — 2000 A — ACB**.
+- Interruptor/celda **52 D-7**; corriente/tipo: **ilegible**.
+- Celdas MVS-700 con interruptores:
+  - **52 — 400 A — OCB**
+  - **52 — 800 A — OCB**
+  - **52 — 1600 A — OCB**
+- Interruptores 220 kV: **52J-04L**, **52J-02L**, **52 J1**; marca/modelo/corriente: **ilegible/no indicado**.
+
+## 5) Transformadores de medida TC/TP
+
+- TC barra 220 kV / acople: **3 TT/CC — 150/5 A**.
+- TP 220 kV: **3 TT/PP — 230√3 / 0,115 / 0,115√3 kV** tal como se lee en el plano.
+- TP/TT: **TT/PP 23000/115 V**.
+- TP/TT 6,6 kV: **TT/PP 6300/120 V**.
+- CTs:
+  - **1500/5**
+  - **600/5**
+  - **400/1** asociado a protección **50/51**
+  - **MM 350/5 A** en varias salidas
+- Medición:
+  - **MM — V — CLASE 0,2** en TT/PP 6300/120 V.
+  - **MM 150/5A** junto a G-105.
+- Clase de precisión de TCs de protección: **ilegible/no indicada**, salvo medición clase 0,2 indicada.
+
+## 6) Comunicaciones
+
+- **IEC 61850, GOOSE, MMS: no indicados / ilegibles.**
+- Protocolos de comunicación: **no aparecen** en el unilineal.
+- Solo se distinguen siglas de medición/protección tipo **MM**, **TT/CC**, **TT/PP**, no protocolos.
+
+## 7) Seccionadores, pararrayos, bancos de condensadores, reactores
+
+- Seccionadores 220 kV legibles:
+  - **89J-04T**, **89J-04L**, **89J-04A**
+  - **89J-02T**, **89J-02L**, **89J-02A**
+  - **89J1-1**
+- Pararrayos: **no se identifican claramente / ilegible**.
+- Bancos de condensadores: **no aparecen**.
+- Reactores: **no aparecen**.
+- Resistencias de neutro: **Rn = 66,6 Ω** en T1, T3 y T4.
+- Cables/lineas legibles:
+  - **3x(1x500 MCM) — 2500 mts**
+  - **4X(600 MCM)**
+  - **3X(500 MCM)**
+- Cargas: **“Otros consumos Minera Mantos Blancos”** en varias salidas.
+
+## 8) Número de plano y revisión
+
+- Empresa: **ENORCHILE S.A.**
+- Plano N°: **MIMB18112016**
+- Descripción: **UNILINEAL MANTOS BLANCOS — INSTALACIONES GENERACIÓN**
+- Escala: **S/E**
+- Proyecto: **JAVIER SEPÚLVEDA C. — 10-11-2016**
+- Dibujó: **JAVIER SEPÚLVEDA C. — 12-11-2016**
+- Aprobó: **MIGUEL SALAZAR C. — 18-11-2016**
+- Mandante: **MANTOS COPPER**
+- Archivo CAD: **UNILINEAL MIMB 18112016**
+- Revisión explícita: **no indicada / ilegible**.
+
+Observación importante: el plano es un unilineal funcional; **no contiene marca/modelo de relés ni interruptores**, por lo que esos campos quedan como **ilegible/no indicado** conforme a la regla solicitada.

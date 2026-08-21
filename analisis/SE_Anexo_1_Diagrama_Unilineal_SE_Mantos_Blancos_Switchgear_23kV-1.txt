@@ -1,0 +1,94 @@
+A continuación extraigo **solo lo legible** del plano. La resolución de la imagen limita la lectura de muchos textos pequeños; donde no se distingue con certeza marco **“ilegible”**. No completo marcas/modelos ni relaciones que no estén visibles.
+
+## Identificación del plano
+- **Título:** DIAGRAMA UNILINEAL SWITCHGEAR 23 kV – SALA ELÉCTRICA.  
+- **Proyecto:** S/E PRINCIPAL MANTOS BLANCOS **220/23 kV** – INGENIERÍA DE FACTIBILIDAD.  
+- **Cliente:** MANTOS COPPER S.A. – DIVISIÓN MANTOS BLANCOS.  
+- **Empresa de ingeniería:** Esintel Ingenieros.  
+- **Plano cliente N°:** **18050-01-EE-DU-002**.  
+- **Revisión:** **Q**.  
+- **Fecha rev. Q:** **01.04.2019**, “EMITIDO PARA USO”.  
+- Revisiones previas visibles: A 05.02.2019 revisión interna; B 07.02.2019 revisión/comentarios cliente; P 18.02.2019 emitido para uso; Q 01.04.2019 emitido para uso.  
+- Documentos de referencia:  
+  - 18050-01-EE-DU-001 — Diagrama unilineal general 220 kV.  
+  - 18050-01-EE-DP-001 — Disposición de equipos – planta.  
+  - 18050-01-EE-ST-001 — Estudio de corto circuito.  
+- Notas legibles: incorporación de nueva celda incoming y celda de unión de barras para correcto funcionamiento del transformador T2; eliminación de conexiones para intercambiar trafo 1 por trafo 2; disposición de celdas proyectadas ver plano 18050-01-EE-DP-001.
+
+## 1) Niveles de tensión y barras
+- **Nivel principal del switchgear:** **23 kV**, **50 Hz**.  
+- **Barra N°1:** **23 kV – 2500 A – 50 Hz – 25 kA (1 s) – 100 MVA**.  
+- **Barra N°2:** **23 kV – 2500 A – 50 Hz – 25 kA (1 s) – 100 MVA**.  
+- **Sistema de barras:** doble barra con **celda de unión de barras / bus-tie** entre Barra N°1 y Barra N°2; configuración exacta de acoplamiento: interruptor 52E visible, detalles de enclavamiento **ilegibles**.  
+- Alimentación superior: “DESDE TRANSFORMADOR N°1” y “DESDE TRANSFORMADOR N°2”, plano 18050-01-EE-DU-001.  
+- Salidas legibles desde celdas: transformador N°5, alimentación planta SX/EW, casa fuerza N°2 / transformadores N°3 y N°4, transformadores N°6 y N°7, planta EW/SX, y “HACIA LÍNEA 23 kV S/E MINA – PERFORADORA **5 MVA**”.  
+- Gabinete de sincronización en sala eléctrica S/E, con referencias a 0–25 kV y sincronismo automático/entrante/servicio; texto fino **parcialmente ilegible**.
+
+## 2) Relés de protección
+Se identifica marca **SEPAM** en varias celdas; el **modelo exacto completo no es legible** en la mayoría. Se leen denominaciones tipo “SEPAM 20/25 LTS02”, “SEPAM 20/25 LTS03”, “SEPAM 100S L?S01”; el sufijo exacto debe tomarse como **ilegible**.
+
+Códigos ANSI visibles por función:
+- **50/51** — sobrecorriente instantáneo/temporizado de fase: presente en múltiples celdas.  
+- **50G/51G** — sobrecorriente de tierra: presente en celdas de alimentadores/incomers.  
+- **50N/51N** aparecen en simbología, no claramente asignados a una celda específica.  
+- **67 / 67N** — sobrecorriente direccional de fase/residual: visible en celdas de acometida/transformador.  
+- **50BF** — falla de interruptor / breaker failure: visible en celdas incoming de transformadores.  
+- **86** — relé de bloqueo/cierre: visible asociado a funciones 50/51-50G/51G y 67/67N.  
+- **27** — bajo voltaje y **59** — sobre voltaje: visibles en zona de chequeo de sincronismo/medición.  
+- **25** — chequeo de sincronismo: indicado como “CHEQUEO SINCRONISMO” y en gabinete de sincronización; cierres 52E10 / 52E4 mencionados.  
+- **81**: aparece en la simbología/lista como función posible, pero **no se distingue asignación clara** en celdas; marcar **ilegible/no confirmado**.  
+- **21, 87, 63**: **no se distinguen** en el diagrama; marcar **ilegible/no visible**.  
+- Etiquetas funcionales legibles en relés incoming: “I–V–P–Q–PF”, “Wh–VARh”, “COM”, “CLOSE REM.”, “TRIP REMOTO”, “SOBRE VOLTAJE”, “ANTIBOMBEO”, “INTERLOCK EVENTUAL”, “B. PRES. SF6”, “SWC L/R”, “TRIP/CLOSE LOC.”.
+
+Marca/modelo exacto: **SEPAM** legible; **modelo exacto y referencia completa: ilegible** salvo denominaciones parciales antes citadas.
+
+## 3) Transformadores de poder
+- Existen acometidas “DESDE TRANSFORMADOR N°1” y “DESDE TRANSFORMADOR N°2”.  
+- Potencia MVA, relación kV/kV y grupo de conexión de TR-1/TR-2: **no constan legibles en este plano**; remiten al plano 18050-01-EE-DU-001.  
+- Único dato de potencia asociado a salida: línea 23 kV hacia S/E Mina–Perforadora **5 MVA**.  
+- Transformadores N°3/N°4/N°5/N°6/N°7 son referencias de salida; sus datos **ilegibles/no mostrados**.
+
+## 4) Interruptores
+- Designación ANSI **52** / **52E**; símbolo “INTERRUPTOR EXTRABLE”.  
+- Celdas de alimentadores: **INT. 25 kV – 1250 A – 25 kA**.  
+- Celdas incoming/unión: **INT. 25 kV – 2500 A – 25 kA**.  
+- Algunos textos muestran “31.5 kA 25 kV” en zona de transformador N°2; interpretación exacta **ilegible**.  
+- Marca y modelo del interruptor: **ilegible**.  
+- Se menciona presión SF6 (“B. PRES. SF6”), por lo que el medio de aislamiento/corte parece **SF6**, pero fabricante/tipo exacto **ilegible**.
+
+## 5) Transformadores de medida TC/TP
+Relaciones legibles en distintas celdas:
+- **1500/5 A – 10P20 – 25 VA**.  
+- **1500/5 A – 10P20 – 50 VA**.  
+- **1500/5 A – 5P20 – 5 VA**.  
+- **1250/5–5 A – 5P20 – 5 VA**.  
+- **600/5 A – 5P20 – 5 VA**.  
+- **400/5 A – 5P20 – 5 VA**.  
+- **50/5 A – 5P20 – 5 VA**.  
+- Otras relaciones parciales: “3 TT/CC”, “852-5230-080/100”, “4x1x4A”; exactitud/burden completo **ilegible** en varios casos.
+
+TP/TTP visibles:
+- Texto tipo **23000/√3 – 115/√3 – 115/√3 V**, con cargas **50 VA**, clases **CL1 / CL0.5** parcialmente legibles; en algunos puntos clase exacta **ilegible**.  
+- Uso de TP para chequeo de sincronismo y medición P/S; secundarios **115 V** visibles hacia gabinete PT1/PT2/PB1.  
+- Clases de medición/protección adicionales: **ilegibles** donde el texto es menor.
+
+## 6) Comunicaciones
+- Se observan bloques/etiquetas “COM”, “A/C”, “RTU MANTOS BLANCOS”, “SWC CELDA”, “SW L/R CELDA”, “A SALA DE COMANDO DE LA CENTRAL”.  
+- **IEC 61850, GOOSE, MMS:** **no legibles/no identificables** en el diagrama.  
+- Protocolo exacto, arquitectura, switches Ethernet, PRP/HSR o puertos seriales: **ilegible**.  
+- La lógica de control muestra mando local/remoto, cierre/apertura y RTU; no se puede afirmar IEC 61850 desde lo visible.
+
+## 7) Seccionadores, pararrayos, condensadores, reactores
+- **Pararrayos:** símbolo presente en simbología; en celdas se ven elementos asociados a entradas/salidas, pero cantidad/ubicación exacta por celda **parcialmente ilegible**.  
+- **Seccionadores:** no se distinguen como equipos independientes con denominación clara; los interruptores son extraíbles, con contactos/enclavamientos asociados. Datos de seccionadores: **ilegible/no confirmado**.  
+- **Bancos de condensadores:** **no visibles**.  
+- **Reactores:** **no visibles**.  
+- Conexión a malla de puesta a tierra y bloques de prueba BP aparecen en simbología; detalles de red de tierra **ilegibles**.
+
+## 8) Otros datos eléctricos legibles
+- Cables/terminales: “TERM. 25 kV”, “CABLE 3x1c N°4/0 AWG XAT-25kV”, “3x500 MCM/T”, “CABLE 3x1c 500 MCM”, códigos 852-5138-070/090, 852-5138-100/120, 852-5138-130/150, 852-5138-160/180, 852-5138-190/210, 852-5132-010/020/080/100.  
+- Códigos de celdas/equipos visibles: 852-5230-110/120/130/140/150/160/170/180; 852-5138-040/060; 852-5136-040/060 parcial.  
+- Panel de sincronización: “PANEL SINCRON. 220 V”, “SINCR. AUTOMÁTICA / ENTRANTE / SERVICIO”, instrumentos 0–25 kV, 45–55 Hz; marcas **ilegibles**.  
+- Corriente secundaria de medición/protección: **5 A** predominante; secundarios TP **115 V**.
+
+**Advertencia:** para ingeniería de protecciones este plano permite confirmar nivel 23 kV, barras 2500 A/25 kA/100 MVA, presencia de funciones ANSI 50/51, 50G/51G, 67/67N, 50BF, 25, 27/59 y 86, relés SEPAM y relaciones de TC listadas; pero **no** permite fijar con fiabilidad modelos exactos de relé, ajustes, protocolos de comunicación ni datos de transformadores de potencia sin levantar los planos de referencia y las hojas de protección asociadas.

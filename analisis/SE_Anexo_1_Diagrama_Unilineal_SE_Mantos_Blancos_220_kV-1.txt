@@ -1,0 +1,60 @@
+A continuación extraigo únicamente lo legible del plano (resolución limitada; marco “ilegible” donde no alcanza a distinguirse con certeza).
+
+## 1) Niveles de tensión y barras
+- Nivel principal: **220 kV, 50 Hz**.
+- **BARRA A 220 kV 50 Hz** (barra superior).
+- **BARRA N°1 220 kV 50 Hz** (barra inferior).
+- Derivación de transformador hacia **“A SALA DE 24 kV”**.
+- Transformador T1 lado bajo: **23 kV** (ver punto 3).
+- Líneas de entrada/salida 220 kV identificadas:
+  - **LÍNEA LABERINTO** (paño izquierdo, códigos -04L).
+  - **LÍNEA CHACAYA** (paño derecho, códigos -02L).
+
+## 2) Relés de protección (ANSI / marca-modelo)
+Legibles:
+- Paños de línea Laberinto/Chacaya, **SISTEMA 1 y SISTEMA 2**: **ABB REL670**. Círculos ANSI visibles: **21, 79, 25, 50/51, 67N, 68, 50BF**.
+- **Diferencial de barras**: ANSI **87B**, **ABB REB670** (texto “DIFERENCIAL DE BARRAS”).
+- Protección de transformador (paño 52J1):
+  - **SISTEMA 1: Schneider Electric MiCOM P643**. ANSI visibles: **87T, 87N, 59N, 50BF**.
+  - **SISTEMA 2: GE D30** (texto “GE-D30”). ANSI visibles: **21, 68, 59, 50/51, 50N/51N**.
+- Medición/facturación: **ION 8690** (Facturación) en paños de línea y paño acoplamiento/transformador; bloques “MEDICIÓN” sin modelo legible.
+- No se leen con claridad funciones 27/81/63/86 en el plano: **ilegible/no aparecen claramente**.
+
+## 3) Transformadores de poder
+- **TRANSFORMADOR T1**: **34/42/50 MVA**, relación **220/23 kV**, grupo **DYn11**.
+- Devanados/terminales asociados: TC JT1, TC ET1, TP JT1; salida “A SALA DE 24 kV”.
+
+## 4) Interruptores
+Designaciones visibles (marca/modelo/tensión/corriente no especificados en el unilineal):
+- **52J-04L** (Línea Laberinto), **52J-02L** (Línea Chacaya), **52J1** (transformador/acoplamiento).
+- Datos eléctricos de interruptor: **ilegible** (solo se aprecia símbolo “52”; no se lee marca/modelo, kV ni A).
+- Nota cercana: **“200A 1CS”** (asociado a servicios/auxiliares; contexto exacto **ilegible**).
+
+## 5) Transformadores de medida TC/TP
+- **TCJ-04L**: **1200/5 A** (línea Laberinto). Clase/carga: **ilegible**.
+- **TCJ-02L**: **800/5 A** (línea Chacaya). Clase/carga: **ilegible**.
+- **TC 52J1**: **3TT/CC t.b.**, relación **150-300/5-5-5 A**; núcleos: **N1 = CL 0,2 FS5-30VA**, **N2 = 5P20-30VA**, **N3 = 5P20-30VA**, **N4 = 5P20-30VA**.
+- **TC JT1**: **3TT/CC t.b.**, relación **150-100/5-5 A**; **N1 = 5P20 50VA**, **N2 = 5P20 30VA**.
+- **TC ET1**: **1 TT/CC t.b.** (resto **ilegible**).
+- TT/CC adicional: **1 TT/CC t.b. 200/5 A, 10P20 50VA**.
+- **TP JT1**: **230 / 0,115 / 0,115** con notación **√3/√3/√3**; cargas **N1 = 3P-150VA**, **N2 = C1 0,2-100VA**.
+- **TPJ-04L / TPJ-02L**, **PRJ-04L / PRJ-02L**: identificados como equipos de línea; relaciones/clases: **ilegible**.
+
+## 6) Comunicaciones
+- Se identifican siglas **“BP”** en acometidas de protección/medida (probables bornes/puntos de prueba), y marcas **“BP×”**.
+- No se lee explícitamente **IEC 61850, GOOSE, MMS** ni protocolo en el plano: **ilegible/no indicado claramente**.
+- Se menciona **“CARRIER”** y **TOJ-02L x2 (fase R y T)** en paño Chacaya, asociado a equipo existente reubicado.
+
+## 7) Seccionadores, pararrayos, bancos de condensadores, reactores
+- Seccionadores motorizados (con “M”): **89J-04T, 89J-04L, 89J-04A** (Laberinto); **89J-02L, 89J-02A** (Chacaya); **89J1-1** (dos posiciones visibles en paño transformador). Corrientes/tensiones: **ilegible**.
+- Pararrayos: símbolo en cabezas de línea; texto **“3C.D. 3P.R. 230KV”** (interpretación exacta **ilegible**).
+- Bancos de condensadores: **no se distinguen**.
+- Reactores: aparece elemento rotulado **“R”** en la parte inferior derecha; datos: **ilegible**.
+
+## 8) Número de plano y revisión
+- Título: **DIAGRAMA UNILINEAL MANTOS BLANCOS 220 kV**.
+- Cliente: **MINERA MANTOS BLANCOS S.A.**
+- Proyecto: **REEMPLAZO PROTECCIONES PAÑO 52-J1**.
+- N° plano: **6003-E102**. Formato **A2**, escala **S/E**.
+- Revisión actual: **2** (“REEMITIDO PARA CONSTRUCCIÓN”, 29.08.2019). Historial visible: A (08.01.2019), B (11.01.2019), 0 (24.01.2019), 1 (03.06.2019), 2 (29.08.2019).
+- Nota: “Para la elaboración de este plano unilineal se tomó como referencia el plano SINGII-SAR-SEM-EL-PL-001 de GENER S.A.”

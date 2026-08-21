@@ -1,0 +1,16 @@
+{
+  "title": "S/E MANTOS BLANCOS · SWITCHGEAR 23 kV",
+  "subtitle": "Doble barra 23 kV · 2500 A · 1000 MVA · relés Schneider SEPAM",
+  "width": 960,
+  "height": 500,
+  "buses": [
+    { "id": "23", "y": 240, "label": "23 kV", "color": "#059669" }
+  ],
+  "branches": [
+    { "type": "feeder", "x": 150, "bus": "23", "label": "MOLINO 1", "spec": "37.5 MVA" },
+    { "type": "feeder", "x": 300, "bus": "23", "label": "MOLINO 2", "spec": "37.5 MVA" },
+    { "type": "feeder", "x": 450, "bus": "23", "label": "PLANTA SX-EW", "spec": "60.000 t/a cátodos" },
+    { "type": "feeder", "x": 600, "bus": "23", "label": "TRAFO N°5", "spec": "1000 kVA" },
+    { "type": "feeder", "x": 750, "bus": "23", "label": "CASA FUERZA", "spec": "T3/T4 13/16/20 MVA" }
+  ]
+}

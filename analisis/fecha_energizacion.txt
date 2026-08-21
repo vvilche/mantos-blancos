@@ -1,0 +1,23 @@
+No aparece una fecha de energización/puesta en servicio en esta portada. La única fecha visible es la del informe.
+
+**Datos visibles:**
+
+- Empresa: ABB / ASEA BROWN BOVERI
+- Autor (Hecho por): Ing. FRANCISCO BLOISE
+- Aprobado por: Eng. SIDNEY MARTINS
+- Informe/Report: R-TD/PPP7: 95/113
+- De/from: BRABB-TD/PPP7
+- Fecha del informe: 03/07/1995
+- Reg. dec.: 450
+- N.º de páginas del texto: 102
+- Título/Asunto: Ensaios finais em transformador (Ensayos finales en transformador)
+- Tipo de documento marcado: Ensayo/investigación experimental (X); Relatório final/Final report (X)
+- Objeto de ensayo: Transformador monofásico, tipo TMY-44, no. 59421, 220/23 kV, 34/42/50 MVA
+- Cliente: MANTOS BLANCOS
+- Referencias: ABB OI: 414.11.035-00
+- Ensayos realizados y aprobados: Rutina; Tipo: CALENTAMIENTO; IMPULSO ATMOSFÉRICO Y MANIOBRA; RUIDO AUDIBLE; MEDICIÓN DE DESCARGAS PARCIALES
+- Normas utilizadas: ANSI/IEEE C57.12.00-1993; ANSI/IEEE C57.12.90-1993; IEC 76-1976
+- Distribución: TD/PCC (Manual de montagem)
+- Firmas: presentes pero ilegibles
+
+**Fecha de energización/puesta en servicio:** ilegible / no consta en la imagen.

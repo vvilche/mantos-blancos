@@ -1,0 +1,130 @@
+A continuación extraigo **solo lo legible** del plano. Dato clave: el documento es un **tablero de servicios auxiliares de CA en baja tensión (380/220 V)**, no un diagrama de protecciones de AT; por tanto **no aparecen relés SEL/ABB/Siemens/GE/Schneider ni IEC 61850**. Donde no hay marca/modelo o no se distingue, indico **ilegible / no especificado**.
+
+## 1) Niveles de tensión y barras
+- Barra principal del tablero: **380/220 V, 50 Hz, 400 A**, **3Ø+N**.
+- Poder de cortocircuito indicado en barra: **10 kA / 1 s**.
+- Denominación del tablero: **TABLERO SS/AA C.A. 852-5240-010**.
+- Alimentaciones:
+  - **DESDE S/E PB-1**, cable **4x1/c N°2 AWG**.
+  - **DESDE SS/AA TRANSF N°7**, **6x1/c N°2/0 AWG + 1c N°2/0 AWG**, nota **“c.a.g. 3”Ø”** parcialmente legible.
+- Título del proyecto menciona: **Servicios Auxiliares C.A. 380/220 V de Subestación Mantos Blancos 220/23 kV**. Los niveles **220 kV / 23 kV** solo aparecen como referencia de la subestación en el rótulo; **no se dibujan barras de 220/23 kV** en este plano.
+- Puesta a tierra: **Cu desnudo 2/0 AWG**, símbolo **t.p.**, nota **“VER NOTA 3”**.
+
+## 2) Relés de protección: ANSI, marca y modelo
+- **No se identifican relés de protección con marca/modelo exacto.**  
+  Marca/modelo: **ilegible / no especificado**.
+- Códigos/símbolos ANSI legibles solo en **leyenda** o como función genérica:
+  - **27 SA**: “PROTECCIÓN DE BAJO VOLTAJE” — aparece en leyenda; aplicación real en el tablero: **no claramente asignada / ilegible**.
+  - **30**: “RELÉ ANUNCIADOR DE ALARMA” — aparece en leyenda y un círculo **30** asociado a señal hacia **CASA DE FUERZA N°2 / RTU**.
+- Símbolos funcionales genéricos en leyenda: **protección diferencial**, **protección magnética**, **protección térmica**, **enclavamiento eléctrico**, **orden de mando o control**.  
+  No equivalen a modelo de relé; **marca/modelo: ilegible**.
+- Protecciones diferenciales residuales visibles en alimentadores, sin marca/modelo:
+  - **2x25 A, 30 mA**
+  - **2x25 A, 30 mA**
+  - **2x25 A, 30 mA**
+  - **4x40 A, 100 mA**
+  - **4x63 A, 30 mA**
+- Códigos ANSI **50/51/87/21/59/81/63/86**: **no aparecen claramente**; si se requiriera para ese dato: **ilegible / no presente**.
+
+## 3) Transformadores de poder
+- No se dibujan transformadores de poder con placa completa.
+- Referencias legibles:
+  - **SS/AA TRANSF N°7** como fuente.
+  - Rótulo general: **Subestación Mantos Blancos 220/23 kV**.
+- Potencia MVA: **ilegible / no indicada**.
+- Relación kV/kV del transformador de servicios auxiliares: **ilegible / no indicada**; solo se infiere alimentación al tablero **380/220 V**, pero sin placa.
+- Grupo de conexión: **ilegible / no indicado**.
+
+## 4) Interruptores
+Sin marca/modelo legible. Datos eléctricos sí legibles:
+- Interruptores de transferencia:
+  - **52SA1 – 400A**, **250A – 400AT**.
+  - **52SA 2 – 400A**, **250A – 400AT**.
+  - Panel: **PANEL DE TRANSFERENCIA 852-5240-050**.
+  - Mando/enclavamiento: textos **“CERRAR/ABRIR”**, **“ELECT. MEC.”**, **“ENCLAVAMIENTO ELÉCTRICO”** en leyenda; corriente de enclavamiento **400 A** junto a esquema de transferencia.
+- Interruptor general de entrada al tablero:
+  - **6-SS/AA-2**, **250 – 400 AT**.
+- Alimentadores **6-1 a 6-25**, todos con tensión marcada mayormente **600 V** en el símbolo del interruptor; corrientes legibles:
+  - 6-1: **3Ø600V, 20 A**
+  - 6-2: **3Ø600V, 20 A**
+  - 6-3: **3Ø600V, 10 A**
+  - 6-4: **1Ø600V, 10 A**
+  - 6-5: **3Ø600V, 10 A**
+  - 6-6: **1Ø600V, 10 A**
+  - 6-7: **3Ø600V, 20 A**
+  - 6-8: **3Ø600V, 10 A**
+  - 6-9: **3Ø600V, 32 A**
+  - 6-10: **3Ø600V, 10 A**
+  - 6-11: **3Ø600V, 10 A**
+  - 6-12: **1Ø600V, 10 A**
+  - 6-13: **3Ø600V, 10 A**
+  - 6-14: **3Ø600V, 10 A**
+  - 6-15: **3Ø600V, 10 A**
+  - 6-16: **3Ø600V, 80 A**
+  - 6-17: **3Ø600V, 10 A**
+  - 6-18: **3Ø600V, 10 A**
+  - 6-19: **3Ø600V, 10 A**
+  - 6-20: **3Ø600V, 32 A**
+  - 6-21: **3Ø600V, 10 A**
+  - 6-22: **3Ø600V, 10 A**
+  - 6-23: **3Ø600V, 10 A**
+  - 6-24: **3Ø600V, 20 A**
+  - 6-25: **3Ø600V, 10 A**
+- Marca de interruptores: **ilegible**. Modelo: **ilegible**.
+
+## 5) Transformadores de medida TC/TP e instrumentos
+- TCs: **3 TT.CC.**, relación **400/5 A**, **20 VA**, clase legible **1F5S** —interpretación exacta de clase de precisión: **parcialmente legible**; se transcribe literalmente **“20VA 1F5S”**.
+- Voltímetro: **0 – 500 V**, con selector **Sw V**.
+- Amperímetro: escala junto a símbolo **A** con texto **“0 – 400 V”** al lado; por tratarse de amperímetro probablemente corresponde a rango **0–400 A**, pero la unidad impresa se lee como **V**, por lo que unidad exacta: **ilegible / inconsistente en el plano**.
+- Instrumentos según leyenda: **voltímetro**, **amperímetro**, **Sw voltímetro**, **Sw amperímetro**.
+- TP/VT de medida en AT: **no aparecen**.
+
+## 6) Comunicaciones
+- Referencias a **RTU** hacia **CASA DE FUERZA N°2** en ambos lados del panel de transferencia y a la derecha del tablero.
+- Señal de alarma: relé anunciador **30** hacia **casa de fuerza N°2**.
+- **IEC 61850: no aparece**. **GOOSE: no aparece**. **MMS: no aparece**. Protocolos: **ilegible / no especificados**.
+
+## 7) Seccionadores, pararrayos, bancos de condensadores, reactores
+- Seccionadores: **no se distinguen claramente** como equipos independientes; símbolos de corte corresponden a interruptores termomagnéticos/diferenciales.
+- Pararrayos: **no aparecen**.
+- Bancos de condensadores: **no aparecen**.
+- Reactores: **no aparecen**.
+- Sí aparece conexión a tierra: **Cu desnudo 2/0 AWG**, electrodo/toma **t.p.**, nota 3.
+
+## 8) Número de plano y revisión
+- Plano principal: **9416-E-104**.
+- Revisión: **3**.
+- Estado: **AS BUILT — APROBADO PARA CONSTRUCCIÓN**.
+- Proyecto: **9416**.
+- Código inferior de plano: **01-SB2-DR-852-EE104**, rev. **3** — lectura parcialmente comprimida pero consistente con el rótulo.
+- Cliente: **EMPRESA MINERA DE MANTOS BLANCOS S.A.**
+- Nombre del plano: **DIAGRAMA UNILINEAL — SERVICIOS AUXILIARES C.A. 380/220 V DE SUBESTACIÓN MANTOS BLANCOS 220/23 kV**.
+- Proyecto general: **SUMINISTRO ELÉCTRICO SANTA BÁRBARA**.
+- Ingeniería: **ESDEI INGENIEROS**.
+- Fechas visibles en rótulo de revisiones: **10.02.94**, **21.03.94**, **22.11.94**, **AGO-95**, **AGO-21**; firmas: **parcialmente ilegibles**.
+
+## Cargas legibles asociadas a alimentadores
+- Cargador de batería N°1, **110 Vcc – 20 A**, tag **852-5570-040**, **12,5 kW**.
+- Cargador de batería N°2, **110 Vcc – 20 A**, tag **852-5570-050**.
+- Gabinete control interruptor 52J1 motor.
+- Gabinete control transformador N°1 calefacción.
+- Gabinete control transformador N°1 ventiladores.
+- Gabinete control transformador N°1 calefacción.
+- Gabinete control transformador N°2 futuro.
+- Enchufes de fuerza patio.
+- Celdas 24 kV calefacción y alumbrado.
+- Motores desconectadores 89JT-1 y 89JT-1T, caja JB-02.
+- Desconectadores calefacción, caja JB-03.
+- Cajas terminales TT.CC. y TT.PP. calefacción, caja JB-04.
+- Tablero control y protecciones S/E 220 kV calefacción y alumbrado.
+- Accionamiento motor cambiador de taps-T1.
+- Alimentador para T.D.A. **852-5240-080**.
+- Reservas.
+- Equipo de presurización sala eléctrica.
+- Celdas 6,3 kV calefacción y alumbrado.
+- Cargador de baterías N°1, **48 Vcc**, tag **852-5570-060**.
+- Cargador de baterías N°2, **48 Vcc**, tag **852-5570-061**.
+- Celda A.T. transformador N°7, caja JB-01.
+- PLC-02, transformador 1 kVA **220/110 V**.
+
+Observación de ingeniería: este plano documenta **distribución auxiliar de BT con transferencia automática/manual 52SA1/52SA2 e instrumentación 400/5 A**; **no contiene esquema de protecciones digitalizadas de subestación ni marcas/modelos de relés**.

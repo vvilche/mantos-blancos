@@ -1,0 +1,37 @@
+{
+  "substation": "S/E Mantos Blancos — 220/23 kV · Capstone Copper",
+  "width": 1600,
+  "height": 900,
+  "buses": [
+    { "id": "220kV", "y": 110, "label": "BARRA 220 kV — 300 A — 50 Hz", "level": "220" },
+    { "id": "23kV", "y": 640, "label": "BARRA 23 kV — 2500 A — 1000 MVA", "level": "69" }
+  ],
+  "lines": [
+    {
+      "id": "L-LAB", "type": "simple_line", "x": 140, "bus_from": "220kV", "level": "220",
+      "breaker": { "y": 70 }, "end_y": 55,
+      "circuit": "LABERINTO 220 kV · 70 km (AES Andes)"
+    },
+    {
+      "id": "L-CHA", "type": "simple_line", "x": 380, "bus_from": "220kV", "level": "220",
+      "breaker": { "y": 70 }, "end_y": 55,
+      "circuit": "CHACAYA 220 kV · 66 km (ENGIE)"
+    },
+    {
+      "id": "T1", "type": "transformer_line", "x": 660, "bus_from": "220kV", "bus_to": "23kV",
+      "level_from": "220", "level_to": "69",
+      "breaker_from": { "y": 155 }, "breaker_to": { "y": 585 },
+      "disconnect_from": { "y": 132 }, "disconnect_to": { "y": 615 },
+      "transformer": { "id": "T1", "label": "T1\\n34/42/50 MVA\\n220/23 kV · DYn11\\nABB TMY-44", "y": 320 },
+      "circuit": "TRANSFORMADOR N°1"
+    },
+    {
+      "id": "T2", "type": "transformer_line", "x": 1050, "bus_from": "220kV", "bus_to": "23kV",
+      "level_from": "220", "level_to": "69",
+      "breaker_from": { "y": 155 }, "breaker_to": { "y": 585 },
+      "disconnect_from": { "y": 132 }, "disconnect_to": { "y": 615 },
+      "transformer": { "id": "T2", "label": "T2\\n34/42/50 MVA\\n220/23 kV · DYn11\\nABB TMY-44", "y": 320 },
+      "circuit": "TRANSFORMADOR N°2"
+    }
+  ]
+}

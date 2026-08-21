@@ -1,0 +1,58 @@
+## Extracción técnica — Diagrama unilineal (imagen entregada)
+
+**Observación previa:** el plano corresponde a **Servicios Auxiliares de Corriente Continua (110 Vcc)**, no al unilineal de potencia AT/MT. Por tanto, gran parte de los ítems solicitados (relés de línea/transformador, TPs/TCs de potencia, IEC 61850, etc.) **no están representados** en este plano. Marco “ilegible / no aparece” donde corresponde.
+
+### 1) Niveles de tensión y barras
+- Subestación (según rótulo): **220/23 kV** — “SUBESTACIÓN MANTOS BLANCOS 220/23 kV”.
+- Sistema CC de servicios auxiliares: **110 Vcc**.
+- **BARRA N°1**: `Icc/i = 982 A`; etiqueta cercana: **110 Vcc, 50 A, 22 kA** (capacidad de cortocircuito de barras 1 y 2 agregada en rev. 2).
+- **BARRA N°2**: alimentada desde INT. N°6-2; acople mediante contactor **72-ACOPL / 72-2, bipolar 50 A** (normalmente abierto en operación normal).
+- Derivaciones mencionadas en salidas: **24 kV** (celdas 24 kV control/señalización), **6,3 kV** (switchgear 6,3 kV / celdas 6,3 kV), transformador de poder **50 MVA N°1** (como circuito rotulado, sin placa completa en este plano).
+- Barras de 220 kV y 23 kV en detalle: **no aparecen** en este plano.
+
+### 2) Relés de protección (ANSI / marca / modelo)
+Dispositivos legibles (solo función ANSI; **marca y modelo: ilegible/no indicados** — se representan como relés genéricos del tablero):
+- **64** — Relé de falla a tierra (64/B1 y 64/B2).
+- **27** — Relé de bajo tensión (27/B1 y 27/B2).
+- **59** — Relé de sobretensión (59/B1 y 59/B2).
+- **30** — Relé anunciador de alarma; también “relé anunciador de alarma con indicación remota vía RTU a casa de fuerza N°2”.
+- No se distinguen **50/51/87/21/81/63/86** en este plano: **ilegible / no aparece**.
+- Marcas/modelos SEL, ABB, Siemens, GE/Multilin, Schneider MiCOM: **ilegible / no aparece**.
+
+### 3) Transformadores de poder
+- Único dato legible: rótulo de circuito **“TRANSFORMADOR DE PODER 50 MVA N°1”** (50 MVA).
+- Relación kV/kV, grupo de conexión, impedancia: **ilegible / no aparece** en este plano (la subestación es 220/23 kV según título, pero el trafo no se dibuja con placa).
+
+### 4) Interruptores / protecciones CC (datos de placa legibles; marca/modelo: ilegible)
+- **8-B1 / 8-B2**: interruptor bipolar CC, **240 V, 50 A**.
+- **8-CARG.1** (cargadores 1 y 2): **240 V, 20 A**.
+- **8-BAT.1 / 8-BAT.2**: **240 V–32 A**, con amperímetro **60-0-60 A** y resistencia shunt.
+- **8-CB1** (barra 1 y barra 2): **240 V, 2 A**.
+- Salidas de barra: múltiples interruptores **240 V — 10 A** y **240 V — 20 A** (rotulados 8-1…8-29 aprox.; conteo exacto de rótulos: ilegible en varios).
+- Nota 1: interruptores deben incluir contacto auxiliar **N.C.** que abre al cerrar el interruptor y cierra al abrir; contactos N.C. en paralelo dan señal de alarma general a Casa de Fuerza N°2.
+- Marca/modelo de interruptores: **ilegible**.
+
+### 5) Transformadores de medida TC/TP
+- **No aparecen TC ni TP** con relación/clase en este plano de CC. **Ilegible / no aplica.**
+- Instrumentos: voltímetro **0–150 V** con selector “Sw V”; amperímetro con shunt **60-0-60 A**.
+
+### 6) Comunicaciones
+- IEC 61850 / GOOSE / MMS: **no aparece**.
+- Solo se indica: transmisión de alarmas **vía RTU** a Casa de Fuerza N°2 (contactos de alarma alambrados a bloque de terminales; estados de interruptores automáticos en paralelo para señal general). Protocolo específico: **ilegible / no indicado**.
+
+### 7) Seccionadores, pararrayos, bancos de condensadores, reactores
+- **No aparecen** en este plano. Sí aparecen:
+  - **CARGADOR N°1**: 110 V / 20 A, código **852-5570-040**.
+  - **CARGADOR N°2**: 110 V / 20 A, código **852-5570-050** (ver nota 4).
+  - **BATERÍA N°1 y N°2**: plomo-ácido, **110 V, 65 Ah**, código **852-5570-010**.
+  - Cable **N°2 AWG**, longitud **9 m**, entre cargador/batería y tablero.
+  - Tablero protección y **Tablero SS/AA C.C.**: código **852-5240-020**.
+  - Contactores de acople de barras: **72-ACOPL** y **72-2**, bipolar **50 A** (enclavamiento eléctrico indicado con símbolo “1”).
+
+### 8) Número de plano y revisión
+- **Plano N°: 9416-E-112** — **Revisión: 3**.
+- Drawing number: **01-SB2-DR-852-EE112**, rev. **3**.
+- Referencias cruzadas: “DE INT. N°6-1 / N°6-2, PL. **01-SB1-DR-852-EE-104**”; puesta a tierra ver plano **N°01-SB2-DR-852-EE405**.
+- Proyecto **9416** — Suministro Eléctrico Santa Bárbara; Empresa Minera de Mantos Blancos S.A.; consultor **ESDEI Ingenieros**; estado **AS BUILT / Aprobado para construcción** (rev. 3 AGO-95 “AS BUILT”).
+
+**Notas operativas legibles:** operación normal de barras con contactor **72-ACOPL abierto**; procedimientos de carga de igualación y manual de baterías (cerrar acoplador, abrir 8-B1, selector a “IGUALACIÓN/MANUAL”, limitar corriente, 2,7 V por celda en manual, retornar a “FLOTACIÓN”, etc.).

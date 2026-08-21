@@ -1,0 +1,20 @@
+La imagen muestra la **portada de un informe ABB**, no una placa de características completa. Datos técnicos visibles:
+
+- **Fabricante:** ABB — ASEA BROWN BOVERI  
+- **Tipo/modelo:** TMY-44  
+- **N.º de serie / identificación:** no. **59421**  
+- **Configuración:** Transformador **monofásico**  
+- **Relación de tensión:** **220/23 kV**  
+- **Potencia:** **34,42,50 MVA** — aparece impreso así; posiblemente **34/42/50 MVA**, pero en la imagen está con comas  
+- **Impedancia (%):** no visible  
+- **Grupo de conexión:** no visible  
+- **Corriente nominal primaria:** no visible  
+- **Corriente nominal secundaria:** no visible  
+- **Año de fabricación:** no visible — solo aparece fecha del informe: **03/07/1995**  
+- **Cliente:** MANTOS BLANCOS  
+- **Referencia ABB:** OI: **414.11.035-00**  
+- **Informe:** R-TD/PPP7: **95/113**  
+- **Reg. dec.:** **450**  
+- **Normas visibles:** ANSI/IEEE **C57.12.00-1993**, ANSI/IEEE **C57.12.90-1993**, **IEC76-1976**  
+- **Ensayos mencionados:** rutina; tipo: calentamiento, impulso atmosférico y maniobra, ruido audible, medición de descargas parciales  
+- **Otros:** “Ensaios finais em transformador”; distribución TD/PCC, manual de montagem; 102 páginas de texto.
