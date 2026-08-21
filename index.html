@@ -3,42 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S/E Mantos Blancos — Unilineales</title>
+<title>S/E Mantos Blancos — Análisis Técnico & Oportunidades</title>
 <style>
-  :root { --bg:#f8fafc; --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --accent:#2563eb; }
+  :root { --bg:#f8fafc; --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --accent:#2563eb; --scada:#0e7490; --supcon:#b45309; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--ink); font-family:Helvetica, Arial, sans-serif; padding:32px 20px; }
+  body { background:var(--bg); color:var(--ink); font-family:Helvetica, Arial, sans-serif; padding:36px 20px 60px; }
   .wrap { max-width:1020px; margin:0 auto; }
-  h1 { font-size:22px; font-weight:700; }
-  .sub { color:var(--mut); font-size:13px; margin:6px 0 28px; }
-  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:28px; box-shadow:0 1px 3px rgba(15,23,42,.06); }
-  .card h2 { font-size:15px; font-weight:700; margin-bottom:4px; }
-  .card .desc { color:var(--mut); font-size:12px; margin-bottom:16px; }
+  h1 { font-size:24px; font-weight:700; }
+  .sub { color:var(--mut); font-size:13px; margin:6px 0 30px; }
+  h2.sec { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin:34px 0 14px; padding-bottom:8px; border-bottom:2px solid var(--line); }
+  h2.sec.scada { color:var(--scada); border-color:#cde9f0; }
+  h2.sec.supcon { color:var(--supcon); border-color:#f5e3c8; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:22px; box-shadow:0 1px 3px rgba(15,23,42,.06); }
+  .card h3 { font-size:15px; font-weight:700; margin-bottom:4px; }
+  .card .desc { color:var(--mut); font-size:12px; margin-bottom:14px; }
   .card img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; background:#fff; display:block; }
-  .footer { color:var(--mut); font-size:11px; text-align:center; margin-top:8px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; }
+  .snap { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .snap .k { font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--mut); margin-bottom:5px; }
+  .snap .v { font-size:13px; font-weight:600; line-height:1.45; }
+  ul.opp { list-style:none; }
+  ul.opp li { padding:11px 14px; border-left:3px solid var(--line); background:#fff; border-radius:8px; margin-bottom:8px; font-size:13px; line-height:1.5; }
+  ul.opp.scada li { border-left-color:var(--scada); }
+  ul.opp.supcon li { border-left-color:var(--supcon); }
+  ul.opp b { font-weight:700; }
+  .tag { display:inline-block; font-size:10px; font-weight:700; padding:2px 7px; border-radius:20px; margin-left:6px; vertical-align:1px; }
+  .tag.scada { background:#e0f2fe; color:#0e7490; }
+  .tag.supcon { background:#fef3c7; color:#b45309; }
+  .read { background:#fffbeb; border:1px solid #fde68a; border-radius:12px; padding:16px 18px; font-size:13px; line-height:1.6; }
+  .read b { color:#92400e; }
+  .footer { color:var(--mut); font-size:11px; text-align:center; margin-top:30px; line-height:1.6; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>S/E Mantos Blancos — Diagramas Unilineales</h1>
-  <div class="sub">Capstone Copper · Región de Antofagasta · 220/23 kV · Generado 21-08-2026</div>
+  <h1>S/E Mantos Blancos — Análisis Técnico & Oportunidades</h1>
+  <div class="sub">Capstone Copper · Región de Antofagasta · 220/23 kV · Central diésel propia · Generado 21-08-2026</div>
 
+  <!-- QUÉ HAY -->
+  <h2 class="sec">¿Qué hay?</h2>
+  <div class="grid">
+    <div class="snap"><div class="k">Subestación</div><div class="v">220/23 kV · doble alimentación (Laberinto 70 km · Chacaya 66 km)</div></div>
+    <div class="snap"><div class="k">Trafos de poder</div><div class="v">2× ABB TMY-44 · 34/42/50 MVA · 1995 (30+ años)</div></div>
+    <div class="snap"><div class="k">Generación propia</div><div class="v">10 grupos diésel 3.85 MVA c/u (~38 MVA respaldo)</div></div>
+    <div class="snap"><div class="k">Relés 220 kV</div><div class="v">ABB REL670 ×4 · REB670 ×1 (diferencial de barras)</div></div>
+    <div class="snap"><div class="k">Relé trafo T1</div><div class="v">Schneider MiCOM P643 (S1) · GE D30 (S2)</div></div>
+    <div class="snap"><div class="k">Switchgear 23 kV</div><div class="v">Doble barra · celdas SF6 · relés Schneider SEPAM</div></div>
+    <div class="snap"><div class="k">Medición</div><div class="v">Schneider ION 8690 (facturación 220 kV)</div></div>
+    <div class="snap"><div class="k">SCADA</div><div class="v">RTU existente · flag_scada=FALSE (sin SCADA certificado)</div></div>
+    <div class="snap"><div class="k">Compliance CEN</div><div class="v">Completitud 97.8% · Calidad 54.7% (45% sin certificar)</div></div>
+  </div>
+
+  <div class="read">
+    <b>Lectura:</b> parque de relés <b>heterogéneo</b> (ABB + Schneider + GE, 3 vendors, sin IEC 61850 confirmado) →
+    dolor de integración y obsolescencia. Trafos de <b>1995</b> candidatos a monitoreo o reemplazo. SCADA
+    <b>parcial</b> y calidad de datos CEN <b>débil</b> (54.7%). Señal clara de modernización + cumplimiento normativo.
+  </div>
+
+  <!-- UNILINEALES -->
+  <h2 class="sec">Diagramas unilineales</h2>
   <div class="card">
-    <h2>1 · Subestación 220/23 kV</h2>
+    <h3>1 · Subestación 220/23 kV</h3>
     <div class="desc">Barra 220 kV (Laberinto 70 km · Chacaya 66 km) + T1 (34/42/50 MVA) y T2 (40 MVA) ABB TMY-44</div>
     <img src="unilineal_limpio.svg" alt="Unilineal 220/23 kV">
   </div>
-
   <div class="card">
-    <h2>2 · Switchgear 23 kV</h2>
+    <h3>2 · Switchgear 23 kV</h3>
     <div class="desc">Doble barra 23 kV · 2500 A · 1000 MVA · relés Schneider SEPAM</div>
     <img src="unilineal_23kv.svg" alt="Switchgear 23 kV">
   </div>
-
   <div class="card">
-    <h2>3 · Media tensión 6.3 kV + Central Diésel</h2>
+    <h3>3 · Media tensión 6.3 kV + Central Diésel</h3>
     <div class="desc">10 grupos diésel 3850 kVA · molinos · switchgear ABB NALF / Brush</div>
     <img src="unilineal_63kv.svg" alt="MT 6.3 kV + central diésel">
+  </div>
+
+  <!-- OPORTUNIDADES CONECTA -->
+  <h2 class="sec scada">Oportunidades CONECTA — SCADA · RTU · PMU · Red <span class="tag scada">NovaTech · Vizimax · Belden</span></h2>
+  <ul class="opp scada">
+    <li><b>SCADA + RTU nuevo</b> — flag_scada=FALSE. Orion SCADA + RTU OrionLX+ (reemplaza el "RTU Mantos Blancos" existente).</li>
+    <li><b>Modernización de relés → IEC 61850</b> — migrar el parque mixto (REL670/P643/D30/SEPAM) a bus de proceso GOOSE/MMS + conmutadores Hirschmann IEC 61850-3.</li>
+    <li><b>PMU + sincronización</b> — Vizimax PMU + Kronos para cumplimiento CEN (medición fasorial en barra 220 kV).</li>
+    <li><b>Medición / facturación</b> — Bitronics (NovaTech) en reemplazo del ION 8690 + calidad de datos (EDAC, reporte automático).</li>
+    <li><b>Monitoreo de trafos</b> — Vizimax RightWON / AMU (merging unit) para los ABB TMY-44 de 1995.</li>
+  </ul>
+
+  <!-- OPORTUNIDADES SUPCON -->
+  <h2 class="sec supcon">Oportunidades SUPCON — DCS · Control · Instrumentación <span class="tag supcon">ECS-700 · PRIDE · CXT/CJT</span></h2>
+  <ul class="opp supcon">
+    <li><b>DCS ECS-700</b> — concentradora con molinos (trafos 4130-TL 37.5 MVA). Modernizar PLC legacy o equipar la Expansión Fase II (USD 89.5M).</li>
+    <li><b>PRIDE predictivo</b> — 10 grupos diésel + motores de molinos + bombas: monitoreo de vibración/estado 24/7 (1,566 tipos de falla rotativos).</li>
+    <li><b>Instrumentación de campo</b> — transmisores CXT/CJT (presión/caudal) + flujómetros + válvulas CVP2000 con positioner inteligente.</li>
+    <li><b>APC V11.2</b> — molienda y flotación (control avanzado de proceso en la concentradora).</li>
+    <li><b>supOS + sala de control</b> — plataforma IIoT + consolas OP085 para central y concentradora.</li>
+  </ul>
+
+  <div class="read">
+    <b>Cross-sell:</b> el paquete completo = RTU/SCADA/PMU (NovaTech/Vizimax) en la subestación + DCS/PRIDE/instrumentación
+    (SUPCON) en la planta. Un solo partner (CONECTA) vs 3 proveedores (Siemens PCS7+Siprotec, ABB 800xA+relés,
+    Emerson DeltaV+Rosemount).
   </div>
 
   <div class="footer">Fuente: InfoTecnica CEN (API pública) · Planos leídos con visión (Kimi K3) · Todo "ilegible" quedó marcado, nada inventado</div>

@@ -129,6 +129,24 @@ Aceite TR2 (17 MB).
   4. flag_equipocom=False → red de comunicaciones IEC 61850 + conmutadores industriales
   5. Expansión Fase II (USD 89.5M) → nueva automatización en concentradora
 
+═══════════════════════════════════════════════════
+10 · ÁNGULO SUPCON (DCS / control / instrumentación)
+═══════════════════════════════════════════════════
+  1. Concentradora con molinos (trafos 4130-TL 37.5 MVA 23/6.3 kV para molinos) →
+     DCS ECS-700 para modernizar el control de proceso (hoy PLC legacy) o para la
+     Expansión Fase II (USD 89.5M) → paquete Digitalización Minera (ECS-700 + TCS-500
+     SIS + APC + instrumentación).
+  2. PRIDE (predictivo): 10 grupos diésel G-101..G-110 + motores de molinos + bombas →
+     monitoreo de vibración/estado 24/7 (1,566 tipos de falla de equipos rotativos).
+  3. Instrumentación de campo: transmisores CXT/CJT (presión/caudal) + flujómetros +
+     válvulas CVP2000 con positioner inteligente.
+  4. APC V11.2: molienda y flotación (la planta tiene concentradora con SAG/bolas).
+  5. supOS (IIoT) + sala de control OP085 para la central y la concentradora.
+
+CROSS-SELL CONECTA↔SUPCON: el paquete completo = RTU/SCADA/PMU (NovaTech/Vizimax) en la
+subestación + DCS/PRIDE/instrumentación (SUPCON) en la planta. Un solo partner (CONECTA)
+vs 3 proveedores (Siemens PCS7+Siprotec, ABB 800xA+relés, Emerson DeltaV+Rosemount).
+
 NOTA DE LECTURA: los planos son raster de 2019-2020 y varias placas salen "ilegible".
 Los modelos exactos de relés marcados SÍ se leyeron (REL670, REB670, MiCOM P643, GE D30,
 SEPAM, ION 8690). Todo lo "ilegible" queda explícito — no se inventó nada.
