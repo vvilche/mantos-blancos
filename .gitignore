@@ -17,3 +17,8 @@ draw_schemdraw.py
 
 # macOS
 .DS_Store
+
+# Inteligencia comercial INTERNA (estrategia, contactos, RAIDS) — NO subir al repo público
+ficha_raids.md
+ficha_*.md
+
